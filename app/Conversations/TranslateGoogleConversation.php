@@ -55,7 +55,7 @@ class TranslateGoogleConversation extends Conversation
             $tr = new GoogleTranslate(); // Translates to 'en' from auto-detected language by default
             $tr->setSource($this->languageFrom); // Translate from English
             $tr->setSource(); // Detect language automatically
-            $tr->setTarget($this->languageTo); // Translate to Vietnam.
+            $tr->setTarget($this->languageTo); // Translate to Vietnam
 
             $this->say($tr->translate($answer->getText()));
 
